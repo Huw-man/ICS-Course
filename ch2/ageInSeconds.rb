@@ -4,4 +4,4 @@ hrs = 24
 days = 249
 years = 17
 
-puts sec*min*hrs*days*years
+puts sec*min*hrs*365*years + sec*min*hrs*days

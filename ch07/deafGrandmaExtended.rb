@@ -11,6 +11,10 @@ while true
   end
   if t != "" && t == t.upcase && t != "BYE"
     puts "NO, NOT SINCE #{1930 + rand(20)}"
+    byeCount = 0
+  elsif t == t.downcase
+    puts "HUH?! SPEAK UP, SONNY!"
+    byeCount = 0
   else
     puts "HUH?! SPEAK UP, SONNY!"
   end

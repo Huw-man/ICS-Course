@@ -16,17 +16,17 @@ def newRoman int
     i[1] =0
   end
   if (int%50)/10 == 4
-    x = ["IL", 1]
+    x = ["XL", 1]
   end
   if (int%50)/10 == 4 && (int%100)/50 ==1
-    l = ["IC", 1]
+    l = ["XC", 1]
     x[1] =0
   end
   if (int%500)/100 == 4
-    c = ["ID", 1]
+    c = ["CD", 1]
   end
   if (int%500)/100 == 4 && (int%1000)/500 ==1
-    d = ["IM", 1]
+    d = ["CM", 1]
     c[1] =0
   end
 

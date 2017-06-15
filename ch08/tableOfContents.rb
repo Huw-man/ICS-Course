@@ -6,4 +6,7 @@ table = ["Table of Contents".center(lw),
   "Chapter 2: Numbers".ljust(lw/2) + "page 9".rjust(lw/2),
   "Chapter 3: Letters".ljust(lw/2) + "page 13".rjust(lw/2)
 ]
-puts table
+
+table.each do |t|
+  puts t
+end

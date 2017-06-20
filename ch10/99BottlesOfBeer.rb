@@ -114,8 +114,5 @@ def singBottlesOfBeer beer
   end
 end
 
-while true
-  puts "How many bottles of beer?"
-  singBottlesOfBeer gets.chomp.to_i
-  break
-end
+puts "How many bottles of beer?"
+singBottlesOfBeer gets.chomp.to_i

@@ -16,8 +16,12 @@ pic_names.each do |name|
     "#{batch_name}#{pic_number}.jpg"
   end
   #does not overwrite a file if it already exists
-  if !(File.exist?(new_name))
-    File.rename name, new_name
+  if File.exist?(new_name)
+    puts "File #{new_name} already exists. Overwrite? yes or no"
+    ans = gets.chomp.downcase
+    if ans == "yes"
+      File.rename name, new_name
+    end
   end
 # Finally, we increment the counter.
   pic_number = pic_number + 1

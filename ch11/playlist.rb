@@ -27,13 +27,12 @@ playlist = []
 puts song_names
 
 puts "\ntype in the number of the song \npress enter on blank to stop selection and create playlist"
-i=true
-while i==true
+while true
   sel = gets.chomp.to_i
   if sel != 0
     playlist.push(song_names[sel-1])
   else
-    i=false
+    break
   end
 end
 create_playlist("TwicePlay", playlist)

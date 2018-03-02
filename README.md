@@ -1,2 +1,2 @@
 # ICS-Course
-ICS course repository
+2017 Ruby Summer course repository
